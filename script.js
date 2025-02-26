@@ -13,20 +13,3 @@ document.addEventListener("DOMContentLoaded", function() {
     setInterval(updateBreakingNews, 5000);
     updateBreakingNews();
 });
-
-function toggleArticle() {
-    const fullArticle = document.getElementById("full-article");
-    if (fullArticle.style.display === "none") {
-        fullArticle.style.display = "block";
-    } else {
-        fullArticle.style.display = "none";
-    }
-}
-
-function likeArticle() {
-    alert('You liked this article!');
-}
-
-function submitComment() {
-    alert('Your comment has been submitted!');
-}
