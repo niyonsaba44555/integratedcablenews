@@ -5,19 +5,83 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
+    color: #333;
 }
 
-/* Add styles for the article */
+/* Header and Navigation Bar */
+header {
+    background-color: #2a9d8f;
+    padding: 20px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header .search-bar input {
+    padding: 10px;
+    width: 300px;
+}
+
+header .sign-in {
+    cursor: pointer;
+    background-color: #bb1919;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 5px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    background-color: #333;
+    padding: 10px;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #444;
+}
+
+/* Breaking News Section */
+.breaking-news {
+    background-color: #f0ad4e;
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
+
+/* Main Content and Articles */
+.content {
+    padding: 20px;
+}
+
 .news-article {
     background: white;
     padding: 20px;
     border-radius: 5px;
     margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .news-article h1 {
-    font-size: 24px;
-    color: #333;
+    font-size: 28px;
+    color: #2a9d8f;
 }
 
 .news-article p {
@@ -31,7 +95,8 @@ body {
     margin-top: 20px;
 }
 
-.news-article .date, .news-article .author {
+.news-article .date,
+.news-article .author {
     font-style: italic;
     font-size: 14px;
     color: #999;
@@ -47,6 +112,7 @@ body {
     color: white;
     border: none;
     cursor: pointer;
+    border-radius: 5px;
 }
 
 .comment-section input[type="text"] {
@@ -63,10 +129,36 @@ body {
     color: white;
     border: none;
     cursor: pointer;
+    border-radius: 5px;
 }
 
 /* Add styles for the "Read More" section */
 #full-article {
     display: none;
     margin-top: 20px;
+}
+
+.trending-news {
+    background-color: #e1e1e1;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.trending-news ul {
+    list-style-type: none;
+}
+
+.trending-news ul li {
+    margin-bottom: 10px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
 }
