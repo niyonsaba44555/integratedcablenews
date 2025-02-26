@@ -27,34 +27,60 @@
     <div class="breaking-news">Breaking News: Loading...</div>
     
     <main class="content">
-        <!-- Existing article about Elon Musk -->
+        <!-- Add the article for Rwanda -->
         <section class="featured-news" id="featured-news">
             <h2>Top Story</h2>
             <div class="news-article">
-                <h1>The Rise and Success of Elon Musk: A Visionary Leading the Future</h1>
+                <h1>The Rise of Rwanda: A Country Leading in Development and Innovation</h1>
                 <p class="date">Published on February 26, 2025</p>
-                <p>Elon Musk is widely regarded as one of the most influential entrepreneurs of the 21st century...</p>
-                <!-- Additional content about Elon Musk -->
+                <p class="author">Written by Niyonsaba Iranejeje Didier</p>
+                <img src="https://example.com/rwanda-image.jpg" alt="Rwanda Landscape">
+                <p>Rwanda, once known for its dark past, has emerged as one of Africa's most progressive nations, known for its commitment to development, innovation, and sustainability. Over the past few decades, Rwanda has made remarkable strides in improving its economy, education, and healthcare, positioning itself as a leader in East Africa.</p>
+                
+                <h3>Post-Genocide Transformation</h3>
+                <p>Following the 1994 genocide, Rwanda has focused on rebuilding its economy, infrastructure, and society. Under the leadership of President Paul Kagame, the country has witnessed a dramatic transformation, from being one of the poorest in the world to becoming one of the fastest-growing economies in Africa.</p>
+                
+                <h3>Focus on Innovation and Technology</h3>
+                <p>Rwanda is making significant strides in technology and innovation. It is often called the "Silicon Valley of Africa" due to its push for a knowledge-based economy. The country has become a hub for tech startups, mobile banking, and digital innovation, with the government investing heavily in ICT infrastructure and promoting a culture of entrepreneurship.</p>
+                
+                <h3>Commitment to Sustainability</h3>
+                <p>In addition to its focus on economic development, Rwanda is also committed to sustainability. The country is a global leader in environmental conservation, having implemented policies such as banning plastic bags and creating numerous protected areas. Rwanda aims to become a green economy, promoting clean energy and environmental responsibility.</p>
+                
+                <h3>Global Recognition</h3>
+                <p>Rwanda's progress has not gone unnoticed on the global stage. The country has earned praise for its commitment to peace, security, and innovation. It has become an attractive destination for international investment and tourism, further strengthening its position as a beacon of hope for other African nations.</p>
+
+                <p>With its focus on development, technology, and sustainability, Rwanda continues to pave the way for a brighter future in Africa.</p>
+
+                <!-- Read More Button -->
+                <button onclick="toggleArticle()">Read More</button>
+                
+                <!-- Hidden content that will show when button is clicked -->
+                <div id="full-article">
+                    <p>Full article content goes here...</p>
+                </div>
+
+                <!-- Like Button -->
+                <div class="like-button">
+                    <button onclick="likeArticle()">Like</button>
+                </div>
+
+                <!-- Comment Section -->
+                <div class="comment-section">
+                    <h3>Leave a Comment</h3>
+                    <input type="text" placeholder="Write your comment here...">
+                    <button onclick="submitComment()">Submit Comment</button>
+                </div>
             </div>
         </section>
         
-        <!-- New article about Rwanda -->
-        <section class="featured-news" id="featured-news">
-            <h2>Top Story: Rwanda's Journey to Success</h2>
-            <div class="news-article">
-                <h1>The Rise of Rwanda: A Country Leading in Development and Innovation</h1>
-                <p class="date">Published on February 26, 2025</p>
-                <p>Rwanda, a small East African nation, has emerged as a leading example of economic development and technological innovation in Africa...</p>
-                <img src="https://example.com/rwanda-image.jpg" alt="Rwanda" />
-                <p>Rwanda's development story began in the aftermath of the 1994 genocide...</p>
-
-                <!-- Add Like button -->
-                <button class="like-btn">Like</button>
-                <!-- Add Comment section -->
-                <textarea placeholder="Add your comment..." class="comment-box"></textarea>
-                <button class="comment-btn">Post Comment</button>
-            </div>
-        </section>
+        <aside class="trending-news">
+            <h2>Trending</h2>
+            <ul>
+                <li>Headline 1</li>
+                <li>Headline 2</li>
+                <li>Headline 3</li>
+            </ul>
+        </aside>
     </main>
     
     <footer>
@@ -62,3 +88,5 @@
     </footer>
 </body>
 </html>
+
+  
